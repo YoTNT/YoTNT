@@ -35,14 +35,19 @@ I designed, built, and deployed the entire thing myself: product decisions, syst
 - Reports both price accuracy and directional accuracy transparently — not just whichever number looks better
 - Live and self-funded, built and operated solo since March 2026
 
+<br>
+
 <div align="center">
 <img src="./assets/architecture.svg" alt="GuessHowMuch architecture diagram" width="100%">
+
+<br>
+
 <sub>a conceptual look at how the system fits together — see below for design details</sub>
 </div>
 
-<details>
-<summary><b>How it's designed (for engineers)</b></summary>
 <br>
+
+## How it's designed
 
 - **Ensemble prediction design** — rather than relying on one model, independent signals (price/volume trends, news sentiment, market psychology, and AI reasoning) are combined into a single forecast, so no single source of error can dominate the outcome.
 - **Self-improving by design** — every prediction is graded automatically once the real outcome is known, recurring mistakes are identified, and the forecasting strategy adjusts over time with no manual retraining step.
@@ -58,8 +63,6 @@ I designed, built, and deployed the entire thing myself: product decisions, syst
 | Core prediction service | TypeScript (Node.js) |
 | Market psychology service | Python |
 | Infrastructure (defined as code) | HCL (Terraform) |
-
-</details>
 
 ---
 
