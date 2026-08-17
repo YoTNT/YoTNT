@@ -1,0 +1,94 @@
+<svg viewBox="0 0 1180 760" xmlns="http://www.w3.org/2000/svg" font-family="'JetBrains Mono','SFMono-Regular',Consolas,monospace">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#3ddc84"/>
+    </marker>
+    <marker id="arrowMuted" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1180" height="760" fill="#0d0d0d"/>
+
+  <!-- title bar -->
+  <rect x="0" y="0" width="1180" height="44" fill="#141414"/>
+  <rect x="0" y="43" width="1180" height="1" fill="#2a2a2a"/>
+  <circle cx="24" cy="22" r="5" fill="#3a3a3a"/>
+  <circle cx="42" cy="22" r="5" fill="#3a3a3a"/>
+  <circle cx="60" cy="22" r="5" fill="#3a3a3a"/>
+  <text x="90" y="27" fill="#3ddc84" font-size="14">$</text>
+  <text x="104" y="27" fill="#c9c9c9" font-size="14">how it works — conceptual overview</text>
+
+  <!-- CLIENT LAYER -->
+  <rect x="40" y="70" width="1100" height="60" rx="4" fill="#141414" stroke="#2a2a2a"/>
+  <text x="60" y="96" fill="#e8e8e8" font-size="14" font-weight="bold">Web app</text>
+  <text x="60" y="116" fill="#777" font-size="11">where people see daily predictions, track accuracy over time, and follow specific stocks</text>
+
+  <line x1="590" y1="130" x2="590" y2="158" stroke="#3ddc84" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ACCESS LAYER -->
+  <rect x="40" y="158" width="1100" height="76" rx="4" fill="#141414" stroke="#2a2a2a"/>
+  <text x="60" y="184" fill="#e8e8e8" font-size="14" font-weight="bold">Access &amp; delivery</text>
+  <text x="60" y="204" fill="#777" font-size="11">content delivery for fast global loading, plus a tiered permission model — some data is free to</text>
+  <text x="60" y="220" fill="#777" font-size="11">everyone, some unlocks after email verification, and power users can bring their own API access</text>
+
+  <line x1="590" y1="234" x2="590" y2="262" stroke="#3ddc84" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- PREDICTION ENGINE -->
+  <rect x="40" y="262" width="700" height="230" rx="4" fill="#141414" stroke="#2a2a2a"/>
+  <text x="60" y="288" fill="#e8e8e8" font-size="14" font-weight="bold">Prediction engine</text>
+  <text x="60" y="306" fill="#777" font-size="11">an ensemble of independent signals is combined into a single daily forecast per stock</text>
+
+  <rect x="60" y="320" width="150" height="54" rx="3" fill="#0d0d0d" stroke="#333"/>
+  <text x="72" y="342" fill="#c9c9c9" font-size="11">Technical</text>
+  <text x="72" y="358" fill="#666" font-size="9">price &amp; volume trends</text>
+
+  <rect x="222" y="320" width="150" height="54" rx="3" fill="#0d0d0d" stroke="#333"/>
+  <text x="234" y="342" fill="#c9c9c9" font-size="11">News</text>
+  <text x="234" y="358" fill="#666" font-size="9">headline sentiment</text>
+
+  <rect x="384" y="320" width="150" height="54" rx="3" fill="#0d0d0d" stroke="#333"/>
+  <text x="396" y="342" fill="#c9c9c9" font-size="11">Market psychology</text>
+  <text x="396" y="358" fill="#666" font-size="9">crowd emotion cycle</text>
+
+  <rect x="546" y="320" width="174" height="54" rx="3" fill="#0d0d0d" stroke="#333"/>
+  <text x="558" y="342" fill="#c9c9c9" font-size="11">AI reasoning</text>
+  <text x="558" y="358" fill="#666" font-size="9">synthesizes the rest</text>
+
+  <line x1="390" y1="374" x2="390" y2="396" stroke="#555" stroke-width="1.5" marker-end="url(#arrowMuted)"/>
+
+  <rect x="60" y="400" width="660" height="72" rx="3" fill="#0d0d0d" stroke="#333"/>
+  <text x="76" y="424" fill="#a8a8a8" font-size="11">Self-improving feedback loop</text>
+  <text x="76" y="442" fill="#666" font-size="10">every prediction is graded automatically once the outcome is known, recurring mistakes are</text>
+  <text x="76" y="456" fill="#666" font-size="10">identified, and the forecasting strategy is adjusted over time — without a person in the loop</text>
+
+  <!-- MARKET PSYCHOLOGY SERVICE (right side) -->
+  <rect x="770" y="262" width="370" height="230" rx="4" fill="#141414" stroke="#2a2a2a"/>
+  <text x="790" y="288" fill="#e8e8e8" font-size="14" font-weight="bold">Market psychology service</text>
+  <text x="790" y="306" fill="#777" font-size="10">a standalone service, kept independent from the</text>
+  <text x="790" y="320" fill="#777" font-size="10">main system so it can evolve on its own</text>
+
+  <rect x="790" y="332" width="330" height="60" rx="3" fill="#0d0d0d" stroke="#333"/>
+  <text x="804" y="352" fill="#a8a8a8" font-size="11">classifies crowd sentiment into a cycle</text>
+  <text x="804" y="368" fill="#666" font-size="10">trough → recovery → neutral → optimism → peak</text>
+
+  <rect x="790" y="400" width="330" height="60" rx="3" fill="#0d0d0d" stroke="#333"/>
+  <text x="804" y="420" fill="#a8a8a8" font-size="11">validated against years of market history</text>
+  <text x="804" y="436" fill="#666" font-size="10">before ever influencing a live prediction</text>
+
+  <line x1="720" y1="352" x2="768" y2="352" stroke="#3ddc84" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <line x1="390" y1="472" x2="390" y2="500" stroke="#3ddc84" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="955" y1="492" x2="955" y2="500" stroke="#555" stroke-width="1.5" marker-end="url(#arrowMuted)"/>
+
+  <!-- DATA + SCHEDULING LAYER -->
+  <rect x="40" y="500" width="1100" height="90" rx="4" fill="#141414" stroke="#2a2a2a"/>
+  <text x="60" y="526" fill="#e8e8e8" font-size="14" font-weight="bold">Data &amp; scheduling</text>
+  <text x="60" y="546" fill="#777" font-size="11">predictions, accounts, and results are stored centrally; a scheduled job runs the pipeline</text>
+  <text x="60" y="562" fill="#777" font-size="11">automatically each day, with safeguards so it can never run twice or fail silently</text>
+  <text x="60" y="578" fill="#777" font-size="11">infrastructure is cloud-hosted and defined as code, so it can be rebuilt reliably from scratch</text>
+
+  <!-- footer stats -->
+  <rect x="40" y="626" width="1100" height="1" fill="#2a2a2a"/>
+  <text x="40" y="652" fill="#555" font-size="11">designed, built, and operated solo — end-to-end, from architecture to infrastructure — since March 2026</text>
+</svg>
